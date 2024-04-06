@@ -120,6 +120,7 @@
     }
     .how-it-works-item .desc{
         font-size: 12px;
+        height: 95px;
     }
     .how-it-works-item{
         border-radius: 10px;
