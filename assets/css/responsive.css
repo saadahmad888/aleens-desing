@@ -127,9 +127,17 @@
         padding: 20px 10px;
         text-align: center;
     }
-    .main-banner-slide{
+    .main-banner-slide.one{
         /* background-image: linear-gradient(rgba(0, 166, 80, 0.6), rgba(0, 166, 80, 0.6)), url('../images/banner-1.jpg'); */
         background-image: linear-gradient(rgba(0, 84, 41, 0.6), rgba(0, 84, 41, 0.6)), url('../images/banner-1.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+    .main-banner-slide.two{
+        /* background-image: linear-gradient(rgba(0, 166, 80, 0.6), rgba(0, 166, 80, 0.6)), url('../images/banner-1.jpg'); */
+        background-image: linear-gradient(rgba(0, 84, 41, 0.6), rgba(0, 84, 41, 0.6)), url('../images/banner-0.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -139,7 +147,7 @@
         text-align: center;
         padding: 20px 15px;
         position: relative;
-        top: 80px;
+        top: 50px;
     }
     .banner-content-box h1{
         font-size: 30px;
@@ -160,6 +168,16 @@
         position: relative;
         bottom: unset;
         margin-bottom: 30px;
+    }
+    .meal-plan-card .content-box .btn{
+        width: 100%;
+    }
+    .faq-sec{
+        padding-top: 0;
+    }
+    .faq-category-box{
+        margin-bottom: 30px;
+        display: none;
     }
 }
 @media only screen and (max-width: 576px){

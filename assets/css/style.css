@@ -264,7 +264,11 @@ a{
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
+    transition: 0.3s all ease;
 }
+/* .meal-plan-card:hover{
+    transform: scale(1.1);
+} */
 .meal-plan-card.reverse{
     flex-direction: row-reverse
 }
@@ -283,6 +287,10 @@ a{
     height: 205px;
     object-fit: cover;
     transform: scale(1.2);
+    transition: 0.3s all ease;
+}
+.meal-plan-card:hover .img-box img{
+    transform: scale(1.1);
 }
 .meal-plan-card .content-box{
     width: 40%;
@@ -299,6 +307,10 @@ a{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    transition: 0.3s all ease;
+}
+.meal-plan-card:hover .content-box .title{
+    transform: scale(1.1);
 }
 .meal-plan-card .content-box .price-box .price{
     color: var(--white);
@@ -323,11 +335,19 @@ a{
     justify-content: start;
     padding: 0;
     transition: 0.3s all ease;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    width: fit-content;
 }
 .meal-plan-card .content-box .btn i{
     font-weight: bold;
     margin-right: 5px;
     transition: 0.3s all ease;
+}
+.meal-plan-card .content-box .btn:active{
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
 }
 .meal-plan-card.orange .content-box .btn{
     color: var(--primary);
@@ -359,6 +379,7 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     padding: 20px;
+    position: relative;
 }
 .meal-of-day-item.orange{
     background-image: url('../images/rec-orange.png');
@@ -370,8 +391,73 @@ a{
     width: 170px!important;
     height: 100px;
     object-fit: contain;
+    transition: 0.3s all ease;
+}
+.meal-of-day-item:hover img{
+    transform: scale(1.1);
 }
 
+#meals-of-day-carsoule.owl-carousel .owl-stage-outer{
+    overflow-y: visible;
+    overflow-x: clip;
+}
+
+.meal-of-day-item .mela-info-box{
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 0;
+    width: 200px;
+    position: absolute;
+    top: -160px;
+    display: none;
+    transition: 0.3s all ease;
+}
+.meal-of-day-item.orange .mela-info-box{
+    background-color: #F8C78B;
+}
+.meal-of-day-item.green .mela-info-box{
+    background-color: #7DCFA5;
+}
+.meal-of-day-item:hover .mela-info-box{
+    display: block;
+}
+.meal-of-day-item .mela-info-box .meal-name{
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+.meal-of-day-item .mela-info-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.meal-of-day-item .mela-info-box ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #7a7a7a;
+    padding: 3px 15px;
+}
+.meal-of-day-item .mela-info-box .title{
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.meal-of-day-item .mela-info-box .desc{
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
 
 
 /* =======================================================================
@@ -461,10 +547,18 @@ a{
     padding: 30px 20px;
     border-radius: 20px;
     margin-bottom: 30px;
+    transition: 0.3s all ease;
+}
+.how-it-works-item:hover{
+    transform: scale(1.05);
 }
 .how-it-works-item img{
     margin-bottom: 10px;
     height: 50px;
+    transition: 0.3s all ease;
+}
+.how-it-works-item:hover img{
+    transform: scale(1.1) translateY(-10px);
 }
 .how-it-works-item.green .title{
     color: var(--green);
@@ -483,4 +577,88 @@ a{
     font-weight: 400;
     color: var(--white);
     margin-bottom: 0;
+}
+
+/* =======================================================================
+    FAQ's Section
+========================================================================== */
+.faq-sec{
+    padding: 50px 0 70px 0;
+}
+.faq-category-box{
+    background-color: #7DCFA5;
+    border-radius: 20px;
+    padding: 20px 10px 20px 30px;
+}
+.faq-category-box .nav-link{
+    text-align: left;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+.faq-category-box .nav-link.active{
+    background-color: var(--green);
+}
+.faq-accodain-box .accordion-item{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 0;
+}
+.faq-accodain-box .accordion-button{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+}
+.faq-accodain-box .accordion-button:hover{
+    color: var(--green);
+}
+.faq-accodain-box .accordion-body p{
+    color: #696969;
+    font-size: 14px;
+    font-weight: 400;
+}
+.faq-accodain-box .accordion-button:not(.collapsed){
+    background-color: white;
+    box-shadow: none;
+    color: var(--green);
+}
+.faq-accodain-box .accordion-button:focus{
+    box-shadow: none;
+}
+.faq-accodain-box .accordion-button::after{
+    background-image: url('../images/Polygon.png');
+    background-size: 16px;
+}
+.faq-accodain-box .accordion-button:not(.collapsed)::after{
+    transform: rotate(-90deg);
+}
+
+
+
+
+/* =======================================================================
+    Main Personalize Section
+========================================================================== */
+.main-personalize-sec .side-detail{
+
+}
+.main-personalize-sec .side-detail .img-box{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.main-personalize-sec .side-detail .img-box img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main-personalize-sec .side-detail .content-box h2{
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
 }
