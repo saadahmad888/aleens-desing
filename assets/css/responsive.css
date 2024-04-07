@@ -184,6 +184,12 @@
         margin-bottom: 30px;
         display: none;
     }
+    .faq-accodain-box .accordion-button{
+        font-size: 13px;
+    }
+    .faq-accodain-box .accordion-body p{
+        font-size: 12px;
+    }
     /* Subscription */
     .step-heading{
         font-size: 20px;
@@ -210,9 +216,22 @@
     .side-detail .content-box .green-outline-btn{
         display: block;
         text-align: center;
+        font-size: 16px;
     }
     .faq-sec.personalize{
         padding-top: 50px;
+    }
+    .main-personalize-sec .side-detail .content-box h2{
+        font-size: 20px;
+    }
+    .main-personalize-sec .side-detail .content-box p{
+        font-size: 14px;
+    }
+    .check-box .check-item .title{
+        font-size: 15px;
+    }
+    .check-box .check-item .desc{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width: 576px){
