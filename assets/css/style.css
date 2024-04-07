@@ -909,3 +909,71 @@ a{
 .prefrence-card-box.mobile{
     display: none;
 }
+
+
+
+.top-steps-sec{
+    padding: 40px 0 40px 0;
+
+}
+
+.wizard-step-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wizard-steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+.wizard-steps.active{
+    opacity: 1;
+}
+.wizard-steps .title{
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.wizard-steps.active .title .number{
+    color: var(--white);
+    background-color: var(--green);
+}
+.wizard-steps .title .number{
+    background-color: #7DCFA5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.wizard-steps .line{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.wizard-steps .line span{
+    width: 50px;
+    height: 1.5px;
+    background-color: var(--green);
+    margin-top: 1px;
+}
+.wizard-steps .line i{
+    position: relative;
+    left: -13px;
+    color: var(--green);
+}
