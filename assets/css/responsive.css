@@ -2,11 +2,16 @@
     
 }
 @media only screen and (min-width: 992px){
-    
+    #plan-detail-modal .modal-dialog{
+        max-width: 1000px;
+    }
 }
 @media only screen and (max-width: 992px){
     .main-nav .navbar{
         padding: 10px 0;
+    }
+    #plan-detail-modal .modal-dialog{
+        max-width: 768px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -178,6 +183,36 @@
     .faq-category-box{
         margin-bottom: 30px;
         display: none;
+    }
+    /* Subscription */
+    .step-heading{
+        font-size: 20px;
+    }
+    .prefrence-card{
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    .check-box{
+        margin-bottom: 20px;
+    }
+    .personalize-side .step{
+        padding-bottom: 30px;
+    }
+    .side-detail{
+        margin-bottom: 40px;
+    }
+    .prefrence-card-box.desktop{
+        display: none;
+    }
+    .prefrence-card-box.mobile{
+        display: block;
+    }
+    .side-detail .content-box .green-outline-btn{
+        display: block;
+        text-align: center;
+    }
+    .faq-sec.personalize{
+        padding-top: 50px;
     }
 }
 @media only screen and (max-width: 576px){

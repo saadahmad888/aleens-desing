@@ -642,6 +642,9 @@ a{
 /* =======================================================================
     Main Personalize Section
 ========================================================================== */
+.main-personalize-sec{
+    padding: 50px 0 100px 0;
+}
 .main-personalize-sec .side-detail{
 
 }
@@ -657,8 +660,252 @@ a{
 }
 .main-personalize-sec .side-detail .content-box h2{
     color: var(--black);
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.main-personalize-sec .side-detail .content-box p{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    transition: 0.3s all ease;
+}
+.personalize-side .step{
+    padding-bottom: 50px;
+    position: relative;
+}
+.step-heading{
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+    position: relative;
+}
+.step-heading span{
+    background-color: #7DCFA5;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-right: 35px;
+    padding: 2px 10px;
+    position: relative;
+}
+.step-heading span svg{
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    transform: translate(-0%, -50%);
+}
+.step-heading .icon{
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    transition: 0.3s all ease;
+}
+.step-heading[aria-expanded="true"] .icon {
+    transform: rotate(-90deg);
+}
+/* Check Box CSS */
+.check-label {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.check-box .check-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.check-box .check-item .title {
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+.check-box .check-item .desc {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+.check-box input:checked+.check-item {
+    background-color: var(--green);
+}
+
+.check-box input:checked+.check-item .title {
+    color: var(--white);
+}
+
+.check-box input:checked+.check-item .desc {
+    color: #ececec;
+}
+
+.check-box label {
+    display: block;
+}
+
+.check-box label input {
+    position: absolute;
+    display: none;
+    color: #fff !important;
+}
+/* End Check */
+.prefrence-card{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* border: 4px solid transparent; */
+}
+.prefrence-card.active{
+    border: 4px solid var(--green);
+}
+.prefrence-card.weight-loss{
+    background-image: linear-gradient(rgba(0, 84, 41, 0), rgba(0, 0, 0, 0.6)), url('https://doer-solution.com/doer-aleens/public/storage/packages/1706617997.png');
+}
+.prefrence-card.weight-gain{
+    background-image: linear-gradient(rgba(0, 84, 41, 0), rgba(0, 0, 0, 0.6)), url('https://doer-solution.com/doer-aleens/public/storage/packages/1707051026.png');
+}
+.prefrence-card.wellness{
+    background-image: linear-gradient(rgba(0, 84, 41, 0), rgba(0, 0, 0, 0.6)), url('https://doer-solution.com/doer-aleens/public/storage/packages/1708422000.png');
+}
+.prefrence-card.lunch-plan{
+    background-image: linear-gradient(rgba(0, 84, 41, 0), rgba(0, 0, 0, 0.6)), url('https://doer-solution.com/doer-aleens/public/storage/packages/1707051090.png');
+}
+.prefrence-card.ramdan-plan{
+    background-image: linear-gradient(rgba(0, 84, 41, 0), rgba(0, 0, 0, 0.6)), url('https://doer-solution.com/doer-aleens/public/storage/packages/1710166663.jpg');
+}
+.prefrence-card .title{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    padding: 0 5px 0 10px;
+    color: var(--white);
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+
+
+/* Meal Detail Modal */
+.paln-detail-modal-box{
+    padding: 20px 30px;
+}
+.paln-detail-modal-box .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+#plan-detail-modal .modal-content{
+    border-radius: 30px;
+}
+.label-box{
+    background: rgb(10,132,69);
+    background: linear-gradient(90deg, rgba(10,132,69,1) 11%, rgba(9,134,70,1) 26%, rgba(6,144,73,0.7849264705882353) 62%, rgba(0,166,81,0) 100%);
+    width: fit-content;
+    padding: 5px 30px 5px 5px;
+}
+.label-box p{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.paln-detail-modal-box .img-box img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.paln-detail-modal-box .content-box h2{
+    color: var(--black);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.paln-detail-modal-box .content-box .desc{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.included-meal-item{
+    position: relative;
+}
+.included-meal-item .img-box{
+    position: relative;
+    z-index: 1;
+}
+.included-meal-item .img-box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.included-meal-item .img-box .tag{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    /* background-color: #7DCFA5; */
+    background-color: var(--green);
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+.included-meal-item .content-box .title{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    transition: 0.3s all ease;
+    transform: translateY(-100px);
+}
+.included-meal-item:hover .content-box .title{
+    transform: translateY(0);
+}
+.prefrence-card-box.mobile{
+    display: none;
 }
