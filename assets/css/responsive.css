@@ -67,11 +67,17 @@
         display: block;
     }
     .not-sure-banner-box .img-box img{
-        display: none;
+        /* display: none; */
+        position: absolute;
+        bottom: unset;
+        top: -120px;
+        left: 30px;
     }
     .not-sure-banner-box{
         border-radius: 10px 150px 10px 10px;
         padding-left: 20px;
+        padding-top: 200px;
+        margin-top: 100px;
     }
     .section-heading h2{
         font-size: 20px;
@@ -277,7 +283,7 @@
         background-color: var(--green);
     }
     .input-group.margin{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .input-group .input{
         padding: 10px 10px;
@@ -301,6 +307,64 @@
     .end-btn-mobile{
         margin-top: 30px;
         display: block;
+    }
+    .checkout-box .heading{
+        font-size: 25px;
+    }
+    /* End Subscription */
+
+    .easy-sec .img-box img{
+        margin-bottom: 30px;
+    }
+    .easy-accordian-box .accordion-body .text{
+        font-size: 12px;
+    }
+    .trainer-banner-box .content-box{
+        text-align: end;
+    }
+    .trainer-banner-box .content-box h2{
+        font-size: 25px;
+    }
+    .trainer-banner-box{
+        padding-top: 200px;
+    }
+    .trainer-banner-box .img-box img{
+        top: -120px;
+        right: 30px;
+        left: unset;
+    }
+    .trainer-banner-box .content-box a{
+        font-size: 16px;
+        padding: 6px 15px;
+    }
+    .competitive-sec .img-box img{
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .competitive-slider-item .img-box img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .competitive-slider-item .content-box .title{
+        font-size: 16px;
+    }
+    .competitive-slider-item .content-box .desc{
+        font-size: 12px;
+    }
+    #competitive-carsoule .owl-dots{
+        margin-top: 20px;
+    }
+    .blog-card .content-box .title{
+        font-size: 16px;
+    }
+    .blog-card .content-box{
+        min-height: auto;
     }
 }
 @media only screen and (max-width: 576px){

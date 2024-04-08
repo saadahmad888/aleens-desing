@@ -69,6 +69,21 @@ a{
     color: var(--white);
 }
 
+.light-green-btn{
+    background-color: #7DCFA5;
+    color: var(--white);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Antonio", sans-serif;
+    border: 1.5px solid var(--green);
+    padding: 8px 30px 10px 30px;
+    border-radius: 5px;
+}
+.light-green-btn:hover{
+    background-color: var(--white);
+    color: #7DCFA5;
+}
+
 /* =======================================================================
     General Common CSS
 ========================================================================== */
@@ -509,8 +524,61 @@ a{
     left: 75%;
 }
 
+/* =======================================================================
+    Trainer Banner Section
+========================================================================== */
+/* trainer-banner */
+.trainer-banner-sec{
+    padding: 100px 0 70px 0;
+}
+.trainer-banner-box{
+    background: rgb(201,118,18);
+    background: linear-gradient(90deg, rgba(201,118,18,1) 0%, rgba(247,148,29,1) 100%);
+    padding: 40px 60px;
+    border-radius: 202px 10px 10px 10px;
+    position: relative;
+}
+.trainer-banner-box .content-box h2{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.trainer-banner-box .content-box a{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.trainer-banner-box .content-box a i{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s all ease;
+}
+/* .trainer-banner-box .content-box a:hover{
+    color: var(--primary);
+} */
+.trainer-banner-box .content-box a:hover i{
+    margin-right: 15px;
+}
 
-
+.trainer-banner-box .img-box img{
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+}
 
 /* =======================================================================
     How It Works Section
@@ -1166,4 +1234,245 @@ input:valid~label {
 }
 .end-btn-mobile{
     display: none;
+}
+
+/* =======================================================================
+    Easy Section
+========================================================================== */
+.easy-sec{
+    padding: 20px 0 70px 0;
+}
+.easy-sec .img-box img{
+    border-radius: 20px;
+    width: 100%;
+}
+.easy-accordian-box .accordion-item{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 0;
+}
+.easy-accordian-box .accordion-button{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50rem!important;
+    background-color: #F8C78B;
+    color: var(--primary);
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+.easy-accordian-box .accordion-button:hover{
+    color: var(--green);
+    background-color: #7DCFA5;
+}
+.easy-accordian-box .accordion-button:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+.easy-accordian-box .accordion-button:not(.collapsed){
+    color: var(--green);
+    background-color: #7DCFA5;
+}
+.easy-accordian-box .accordion-body .text{
+    color: #696969;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.accordion-button::after{
+    background-image: none;
+    font-family: 'Font Awesome 5 Pro'; 
+    content: "\f04b";
+    /* font-weight: 300; */
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    transform: rotate(90deg);
+}
+
+
+/* =======================================================================
+    Competitive Section
+========================================================================== */
+.competitive-sec{
+    padding: 50px 0;
+}
+.competitive-sec .section-heading{
+    margin-bottom: 50px;
+}
+.competitive-sec .img-box .banner-img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.competitive-sec:hover .img-box .banner-img
+{
+    animation: rotate 15s infinite linear;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.competitive-slider-item .img-box{
+    text-align: center;
+}
+.competitive-slider-item .img-box img{
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    transition: unset;
+    transform: unset;
+}
+.competitive-sec:hover .competitive-slider-item .img-box img{
+    transition: unset;
+    transform: unset;
+}
+.competitive-slider-item .content-box .title{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.competitive-slider-item .content-box .desc{
+    color: #696969;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+#competitive-carsoule .owl-dots{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#competitive-carsoule .owl-dots .owl-dot span{
+    width: 50px;
+    height: 2px;
+}
+#competitive-carsoule .owl-dots .owl-dot:hover span{
+    background-color: var(--primary);
+    opacity: 0.5;
+}
+#competitive-carsoule .owl-dots .owl-dot.active span{
+    height: 3px;
+    background-color: var(--primary);
+    opacity: 1;
+}
+
+
+
+/* =======================================================================
+    Blog Section
+========================================================================== */
+.blog-sec{
+
+}
+.blog-card{
+position: relative;
+}
+.blog-card .img-box{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.blog-card .img-box img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+}
+.blog-card:hover .img-box img{
+    transform: scale(1.1);
+}
+.blog-card .content-box{
+    padding: 20px 20px;
+    border-radius: 20px;
+    width: 80%;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translateY(-60px);
+}
+.blog-card.green .content-box{
+    background-color: #7DCFA5;
+}
+.blog-card.orange .content-box{
+    background-color: #F8C78B;
+}
+.blog-card .content-box .title{
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+
+/* =======================================================================
+    Footer Section
+========================================================================== */
+footer{
+    background-color: var(--green);
+}
+.footer-top{
+    padding: 20px 0;
+}
+.footer-top .button-box{
+    text-align: end;
+}
+.footer-top .title{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 500;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.footer-main{
+    border-radius: 30px 30px 0 0;
+    padding: 50px 0 20px 0;
+    background-color: var(--white);
+}
+.footer-main .logo-box img{
+    width: 150px;
+}
+.footer-main .link-box ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-main .link-box ul li{
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.footer-main .link-box ul li a{
+    color: var(--text);
+}
+.footer-main .link-box ul li a:hover{
+    color: var(--green);
+}
+
+.footer-bottom{
+    background-color: #F9F9F9;
+}
+.footer-bottom .copyright p{
+    margin-bottom: 0;
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+.footer-bottom .we-accept{
+    text-align: end;
 }
