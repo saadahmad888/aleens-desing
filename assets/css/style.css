@@ -645,9 +645,9 @@ a{
 .main-personalize-sec{
     padding: 50px 0 100px 0;
 }
-.main-personalize-sec .side-detail{
+/* .main-personalize-sec .side-detail{
 
-}
+} */
 .main-personalize-sec .side-detail .img-box{
     border-radius: 20px;
     overflow: hidden;
@@ -976,4 +976,194 @@ a{
     position: relative;
     left: -13px;
     color: var(--green);
+}
+
+
+
+
+
+/* =======================================================================
+    Main Checkout Section
+========================================================================== */
+.main-checkout-sec{     
+    padding: 50px 0 100px 0;
+}
+.input-group {
+    position: relative;
+    width: 100%;
+}
+.input-group.margin{
+    margin-bottom: 20px;
+}
+
+.input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 10px!important;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text);
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #aeaeae;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+
+.input:focus,
+input:valid {
+    outline: none;
+    border: 1.5px solid var(--green);
+}
+
+.input:focus~label,
+input:valid~label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #fff;
+    padding: 0 .2em;
+    color: var(--green);
+}
+
+
+.contact-info{
+    margin-bottom: 50px;
+}
+.contact-info .title{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.checkout-box .heading{
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.date-title{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/* Modify Calender */
+/* .calendarify:is([data-theme=dark]){
+    --background: #00A651;
+    --background: #7DCFA5;
+
+} */
+.calendarify{
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px!important;
+}
+.calendarify ul{
+    padding-left: 0;
+}
+.calendarify__quick-actions{
+    display: none;
+}
+
+/* Summary CSS */
+.summary-right{
+    border-radius: 20px;
+    padding: 20px;
+}
+.summary-right .heading{
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.promo-box{
+    border-top: 1px solid #7DCFA5;
+    border-bottom: 1px solid #7DCFA5;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.promo-box .btn{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    display: block;
+    text-align: left;
+}
+.promo-box .btn:hover{
+    color: var(--green);
+}
+.promo-box .btn:active{
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
+}
+
+.recepit-item{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7DCFA5;
+    margin-bottom: 10px;
+}
+.recepit-item.total{
+    border-bottom: 0;
+}
+.recepit-item.total .title{
+    color: var(--green);
+}
+.recepit-item.total .price{
+    color: var(--green);
+}
+.recepit-item .title{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.recepit-item .desc{
+    color: #9a9a9a;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.recepit-item .price{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.promo-box .input-group .input{
+    padding: 5px 10px;
+}
+.promo-box .input-group .user-label{
+    top: -10px;
+}
+.promo-box .input-group input:focus + .user-label{
+    top: 0px;
+}
+.end-btn-mobile{
+    display: none;
 }

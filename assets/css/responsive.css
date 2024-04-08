@@ -276,6 +276,32 @@
     .wizard-steps.active .title .number{
         background-color: var(--green);
     }
+    .input-group.margin{
+        margin-bottom: 10px;
+    }
+    .input-group .input{
+        padding: 10px 10px;
+    }
+    .input-group .user-label{
+        top: -5px;
+        font-size: 14px;
+    }
+    .input-group input:focus + .user-label{
+        top: 0px;
+    }
+    .contact-info{
+        margin-bottom: 20px;
+    }
+    .checkout-left-side{
+        margin-bottom: 20px;
+    }
+    .end-btn-desktop{
+        display: none;
+    }
+    .end-btn-mobile{
+        margin-top: 30px;
+        display: block;
+    }
 }
 @media only screen and (max-width: 576px){
    

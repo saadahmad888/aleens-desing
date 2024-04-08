@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personalize - Aleens</title>
+  <title>Checkout - Aleens</title>
   <!-- Fav Icon -->
   <link rel="shortcut icon" href="assets/images/aleens-icon.png" type="image/x-icon">
   <!-- Bootstrap CDN -->
@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Smart Wizard -->
   <link rel="stylesheet" href="assets/css/smart_wizard_all.min.css">
+  <!-- Calenderify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/mohamadadithya/calendarify@latest/dist/calendarify.min.css">
   <!-- Slick -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -79,7 +81,7 @@
         <div class="row">
           <div class="col-12">
             <div class="wizard-step-box">
-              <div class="wizard-steps active">
+              <div class="wizard-steps">
                 <p class="title">
                   <span class="number">
                     1
@@ -91,7 +93,7 @@
                   <i class="fal fa-long-arrow-right"></i>
                 </p>
               </div>
-              <div class="wizard-steps">
+              <div class="wizard-steps active">
                 <p class="title">
                   <span class="number">
                     2
@@ -120,297 +122,261 @@
         </div>
       </div>
     </section>
-    <!-- Main Personalize Section -->
-    <section class="main-personalize-sec">
+    <!-- Main Checkout Section -->
+    <section class="main-checkout-sec">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 offset-lg-5 col-md-6 col-12">
-            <div class="">
-              <div class="step">
-                <p class="step-heading" type="button" data-bs-toggle="collapse" data-bs-target="#choosePrefrence"
-                  aria-expanded="false" aria-controls="choosePrefrence">
-                  <span>
-                    Step 1
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="29" height="27" x="0" y="0" viewBox="0 0 490.661 490.661"
-                      style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                      <g>
-                        <path
-                          d="M453.352 236.091 48.019 1.424c-3.285-1.899-7.36-1.899-10.688 0a10.681 10.681 0 0 0-5.333 9.237v469.333c0 3.819 2.048 7.339 5.333 9.237a10.802 10.802 0 0 0 5.333 1.429c1.856 0 3.691-.469 5.355-1.429l405.333-234.667c3.285-1.92 5.312-5.44 5.312-9.237s-2.027-7.338-5.312-9.236z"
-                          fill="#7dcfa5" opacity="1" data-original="#000000" class=""></path>
-                      </g>
-                    </svg>
-                  </span>
-                  Choose your preferences
-                  <span class="icon">
-                    <img src="assets/images/Polygon.png" alt="">
-                  </span>
-                </p>
-              </div>
-              <div class="prefrence-card-box mobile">
-                <div class="collapse" id="choosePrefrence">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card weight-loss active">
-                        <p class="title">
-                          Weight Loss
-                        </p>
+          <div class="col-lg-9 col-md-8 col-12">
+            <div class="checkout-left-side">
+              <div class="row">
+                <div class="col-12">
+                  <div class="checkout-box">
+                    <h2 class="heading">
+                      Checkout 
+                    </h2>
+                  </div>
+                  <div class="contact-info">
+                    <p class="title">
+                      Contact Information
+                    </p>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <div class="input-group margin">
+                          <input required="" type="text" name="text" autocomplete="off" class="input">
+                          <label class="user-label">First Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <div class="input-group margin">
+                          <input required="" type="text" name="text" autocomplete="off" class="input">
+                          <label class="user-label">Last Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <div class="input-group margin">
+                          <input required="" type="email" name="text" autocomplete="off" class="input">
+                          <label class="user-label">Email Address</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <div class="input-group margin">
+                          <input required="" type="tel" name="text" autocomplete="off" class="input">
+                          <label class="user-label">Phone No.</label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card weight-gain">
-                        <p class="title">
-                          Weight Gain
-                        </p>
+                  </div>
+                  <div class="step mb-3 mb-md-5 mb-lg-5">
+                    <p class="check-label">
+                      How many days per week?
+                    </p>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-6">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="days-per-week" value="1">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  5 Days
+                                </p>
+                                <p class="desc">
+                                  Per Week
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-6">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="days-per-week" value="2">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  6 Days
+                                </p>
+                                <p class="desc">
+                                  Per Week
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="days-per-week" value="3">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  7 Days
+                                </p>
+                                <p class="desc">
+                                  Per Week
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card wellness">
-                        <p class="title">
-                          Wellness
-                        </p>
+                  </div>
+                  <div class="step mb-3 mb-md-5 mb-lg-5">
+                    <p class="check-label">
+                      How many weeks?
+                    </p>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-6">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="many-weeks" value="1">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  4 Weeks
+                                </p>
+                                <p class="desc">
+                                  Regular
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-6">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="many-weeks" value="2">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  8 Weeks
+                                </p>
+                                <p class="desc">
+                                  Most Poupluar
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="check-box action">
+                          <label>
+                            <input type="radio" name="many-weeks" value="3">
+                            <div class="check-item">
+                              <div class="">
+                                <p class="title">
+                                  12 Weeks
+                                </p>
+                                <p class="desc">
+                                 Best Result
+                                </p>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card lunch-plan">
-                        <p class="title">
-                          Lunch Plan
-                        </p>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <p class="date-title">
+                        When would you like to start your plan
+                      </p>
+                      <div class="input-group mb-4">
+                        <input required="" type="text" name="text" autocomplete="off" class="input date-input" id="date-input">
+                        <label class="user-label">Start Date</label>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card ramdan-plan">
-                        <p class="title">
-                          Ramadan Plan
-                        </p>
-                      </div>
-                    </div>
+                  </div>
+                  <div class="text-end end-btn-desktop">
+                    <a class="green-btn" href="">
+                      Checkout your plan
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-5 col-md-6 col-12 ">
-            <div class="side-detail">
-              <div class="img-box">
-                <img src="assets/images/banner-0.jpg" alt="">
-              </div>
-              <div class="content-box">
-                <h2>
-                  Ramadan Plan
-                </h2>
-                <p class="">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam nesciunt cum dolorum
-                  itaque quaerat explicabo animi eveniet officia delectus ex amet, libero iure. Neque cupiditate nemo
-                  consequuntur harum rem.
-                </p>
-                <span class="shadow"></span>
-                <a class="green-outline-btn" href="" data-bs-toggle="modal" data-bs-target="#plan-detail-modal">
-                  View Plan Full Detail
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="summary-right light-sec">
+              <p class="heading">
+                Order Summary
+              </p>
+              <div class="promo-box">
+                <a class="btn" data-bs-toggle="collapse" href="#promoCollapse" role="button" aria-expanded="true" aria-controls="promoCollapse">
+                  Do you have Promor Code?
                 </a>
+                <div class="collapse show mt-2" id="promoCollapse">
+                  <div class="input-group">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Enter Code</label>
+                  </div>
+                </div>
+              </div>
+              <div class="recepit-item">
+                <div class="">
+                  <p class="title">
+                    RAMADAN Plan
+                  </p>
+                  <p class="desc">
+                    4 Weeks (5 days per week)
+                  </p>
+                </div>
+                <div class="">
+                  <p class="price">
+                    AED 3,480.00
+                  </p>
+                </div>
+              </div>
+              <div class="recepit-item">
+                <div class="">
+                  <p class="title">
+                    VAT 5% Amount
+                  </p>
+                </div>
+                <div class="">
+                  <p class="price">
+                    AED 165.71
+                  </p>
+                </div>
+              </div>
+              <div class="recepit-item">
+                <div class="">
+                  <p class="title">
+                    Cooler Bag
+                  </p>
+                  <p class="desc">
+                    (Refundable)
+                  </p>
+                </div>
+                <div class="">
+                  <p class="price">
+                    AED 200.00
+                  </p>
+                </div>
+              </div>
+              <div class="recepit-item total">
+                <div class="">
+                  <p class="title">
+                    Total
+                  </p>
+                </div>
+                <div class="">
+                  <p class="price">
+                    AED 3,680.00
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-7 col-md-6 col-12 ">
-            <div class="personalize-side">
-              <div class="prefrence-card-box desktop">
-                <div class="collapse" id="choosePrefrence">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card weight-loss active">
-                        <p class="title">
-                          Weight Loss
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card weight-gain">
-                        <p class="title">
-                          Weight Gain
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card wellness">
-                        <p class="title">
-                          Wellness
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card lunch-plan">
-                        <p class="title">
-                          Lunch Plan
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-6">
-                      <div class="prefrence-card ramdan-plan">
-                        <p class="title">
-                          Ramadan Plan
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="step">
-                <p class="step-heading">
-                  <span>
-                    Step 2
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="29" height="27" x="0" y="0" viewBox="0 0 490.661 490.661"
-                      style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                      <g>
-                        <path
-                          d="M453.352 236.091 48.019 1.424c-3.285-1.899-7.36-1.899-10.688 0a10.681 10.681 0 0 0-5.333 9.237v469.333c0 3.819 2.048 7.339 5.333 9.237a10.802 10.802 0 0 0 5.333 1.429c1.856 0 3.691-.469 5.355-1.429l405.333-234.667c3.285-1.92 5.312-5.44 5.312-9.237s-2.027-7.338-5.312-9.236z"
-                          fill="#7dcfa5" opacity="1" data-original="#000000" class=""></path>
-                      </g>
-                    </svg>
-                  </span>
-                  Customize your plan
-                </p>
-                <p class="check-label">
-                  How Many Calories Per Day?
-                </p>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="calories-per-day" value="1">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              1300 -1500 Kcal/Day
-                            </p>
-                            <p class="desc">
-                              Standard plan
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="calories-per-day" value="2">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              1400 -1600 Kcal/Day
-                            </p>
-                            <p class="desc">
-                              Upsize plan
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="step">
-                <p class="step-heading">
-                  <span>
-                    Step 3
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="29" height="27" x="0" y="0" viewBox="0 0 490.661 490.661"
-                      style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                      <g>
-                        <path
-                          d="M453.352 236.091 48.019 1.424c-3.285-1.899-7.36-1.899-10.688 0a10.681 10.681 0 0 0-5.333 9.237v469.333c0 3.819 2.048 7.339 5.333 9.237a10.802 10.802 0 0 0 5.333 1.429c1.856 0 3.691-.469 5.355-1.429l405.333-234.667c3.285-1.92 5.312-5.44 5.312-9.237s-2.027-7.338-5.312-9.236z"
-                          fill="#7dcfa5" opacity="1" data-original="#000000" class=""></path>
-                      </g>
-                    </svg>
-                  </span>
-                  Find Your Fit Plan with nutritionist
-                </p>
-                <p class="check-label">
-                  Would you like to meet with a nutritionist?
-                </p>
-                <div class="row mb-3">
-                  <div class="col-lg-6 col-md-6 col-6">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="nutrationist" value="1" onclick="toggleSecondRow(this)">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              Yes
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-6">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="nutrationist" value="2" onclick="toggleSecondRow(this)">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              No
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" id="secondRow" style="display: none;">
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="call-option" value="1">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              <i class="fal fa-user me-2"></i> Meet in Person
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="call-option" value="2">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              <i class="fal fa-user-headset me-2"></i> Phone Call
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="check-box action">
-                      <label>
-                        <input type="radio" name="call-option" value="3">
-                        <div class="check-item">
-                          <div class="">
-                            <p class="title">
-                              <i class="fal fa-video me-2"></i> Video Meeting
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-end">
-                <a class="green-btn" href="checkout.html">
-                  Get your plan
-                </a>
-              </div>
+            <div class="text-end end-btn-mobile">
+              <a class="green-btn" href="">
+                Checkout your plan
+              </a>
             </div>
           </div>
         </div>
@@ -868,6 +834,8 @@
   <script src="assets/js/jquery.smartWizard.min.js"></script>
   <!-- Owl Carsoul -->
   <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Calenderify -->
+  <script src="https://cdn.jsdelivr.net/gh/mohamadadithya/calendarify@latest/dist/calendarify.iife.js"></script>
   <!-- Isotope JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
   <!-- Alick -->
@@ -888,6 +856,37 @@
       }
     }
   </script>
+
+<script>
+  // Define options for calendarify
+  const options = {
+    accentColor: '#0090FC',
+    isDark: true,
+    zIndex: 9999,
+    onChange: (calendarify) => console.log(calendarify),
+    quickActions: true,
+    locale: {
+      format: "DD-MM-YYYY",
+      lang: {
+        code: 'id',
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+
+        // ui: {
+        //   quickActions: {
+        //     today: "Hari Ini",
+        //     tomorrow: "Besok",
+        //     inTwoDays: "Lusa",
+        //   }
+        // }
+      }
+    }
+  };
+
+  // Initialize calendarify
+  const calendarify = new Calendarify('.date-input', options);
+  calendarify.init();
+</script>
 
 
 
