@@ -1280,13 +1280,13 @@ input:valid~label {
     font-size: 14px;
     margin-bottom: 0;
 }
-.accordion-button::after{
+.easy-accordian-box .accordion-button::after{
     background-image: none;
     font-family: 'Font Awesome 5 Pro'; 
     content: "\f04b";
     /* font-weight: 300; */
 }
-.accordion-button:not(.collapsed)::after{
+.easy-accordian-box .accordion-button:not(.collapsed)::after{
     background-image: none;
     transform: rotate(90deg);
 }
@@ -1370,7 +1370,8 @@ input:valid~label {
     Blog Section
 ========================================================================== */
 .blog-sec{
-
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 .blog-card{
 position: relative;
@@ -1398,6 +1399,10 @@ position: relative;
     justify-content: center;
     margin: 0 auto;
     transform: translateY(-60px);
+    transition: 0.3s all ease;
+}
+.blog-card:hover .content-box{
+    transform: translateY(-70px);
 }
 .blog-card.green .content-box{
     background-color: #7DCFA5;
@@ -1475,4 +1480,231 @@ footer{
 }
 .footer-bottom .we-accept{
     text-align: end;
+}
+
+
+
+.footer-main .contact-box ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-main .contact-box ul li{
+    border-right: 1px solid #ccc;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+.footer-main .contact-box ul li a{
+    color: var(--text);
+}
+.footer-main .contact-box ul li a .fa-whatsapp{
+    color: #25D366;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.footer-main .contact-box ul li a .fa-phone-alt{
+    color:  var(--green);
+    font-size: 20px;
+    margin-right: 5px;
+}
+.footer-main .contact-box ul li a:hover{
+    color: var(--green);
+}
+
+.footer-main .social-box ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.footer-main .social-box ul li{
+    /* border-right: 1px solid #ccc; */
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.footer-main .social-box ul li a{
+    color: var(--green);
+    font-size: 18px;
+    background-color: #7DCFA5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.footer-main .social-box ul li a:hover{
+    color: var(--white);
+    background-color: var(--green);
+}
+
+
+
+
+
+
+
+/* =======================================================================
+    Google Rating Section
+========================================================================== */
+.google-ratign-sec{
+    padding: 70px 0 70px 0;
+}
+.google-rating-card{
+    position: relative;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.google-rating-card .img-box{
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    text-align: center;
+}
+.google-rating-card .img-box img{
+    border-radius: 50rem;
+    border: 10px solid #f9f9f9;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.google-rating-card .content-box{
+    text-align: center;
+    padding: 70px 20px 20px 20px;
+    border-radius: 20px;
+}
+.google-rating-card.green .content-box{
+    background-color: #7DCFA5;
+}
+.google-rating-card.orange .content-box{
+    background-color: #F8C78B;
+}
+.google-rating-card .content-box .star-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: 0.3s all ease;
+}
+.google-rating-card:hover .content-box .star-box{
+    transform: scale(1.1);
+}
+.google-rating-card .content-box .star-box i{
+    font-weight: bold;
+    color: var(--white);
+    font-size: 18px;
+    margin: 0 3px;
+}
+.google-rating-card .content-box .title{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.google-rating-card.green .content-box .title{
+    color: var(--green);
+}
+.google-rating-card.orange .content-box .title{
+    color: var(--primary);
+}
+.google-rating-card .content-box .desc{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.google-rating-card .content-box a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;   
+}
+.google-rating-card.green .content-box a{
+    color: var(--green);
+}
+.google-rating-card.orange .content-box a{
+    color: var(--primary);
+}
+.google-rating-card .content-box a:hover{
+    color: var(--white);
+}
+.google-rating-card .content-box a i{
+    font-weight: bold;
+}
+.google-rating-card .bottom-box{
+    text-align: center;
+    padding: 10px 0;
+}
+.google-rating-card .bottom-box img{
+    width: 80px;
+}
+
+#google-rating-modal .modal-content{
+    border-radius: 30px;
+}
+.google-rating-modal-box{
+    position: relative;
+    padding: 50px 50px;
+}
+.google-rating-modal-box .btn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.google-rating-modal-box .user-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+.google-rating-modal-box .user-box .img-box{
+    border-radius: 50rem;
+    border: 2px solid var(--green);
+    padding: 1px;
+    margin-right: 20px;
+}
+.google-rating-modal-box .user-box .img-box img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50rem;
+}
+.google-rating-modal-box .content-box{
+    position: relative;
+}
+.google-rating-modal-box .content-box .title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase; 
+    margin-bottom: 7px;
+}
+.google-rating-modal-box .content-box .star-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.google-rating-modal-box .content-box .star-box i{
+    font-weight: bold;
+    color: #F7D800;
+    margin-right: 5px;
+}
+.google-rating-modal-box .review-on{
+    color: var(--green);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+}
+.google-rating-modal-box .desc{
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
 }

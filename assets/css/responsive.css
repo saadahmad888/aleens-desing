@@ -5,12 +5,18 @@
     #plan-detail-modal .modal-dialog{
         max-width: 1000px;
     }
+    #google-rating-modal .modal-dialog{
+        max-width: 1000px;
+    }
 }
 @media only screen and (max-width: 992px){
     .main-nav .navbar{
         padding: 10px 0;
     }
     #plan-detail-modal .modal-dialog{
+        max-width: 768px;
+    }
+    #google-rating-modal .modal-dialog{
         max-width: 768px;
     }
 }
@@ -365,6 +371,46 @@
     }
     .blog-card .content-box{
         min-height: auto;
+    }
+    .footer-top .title{
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .footer-top .button-box{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer-top .button-box .light-green-btn{
+        font-size: 16px;
+    }
+    .footer-main .logo-box{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-main .social-box ul{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer-main .link-box ul{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer-main .contact-box ul{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .footer-bottom .we-accept img{
+        width: 100px;
+    }
+    .footer-main{
+        padding-bottom: 50px;
+    }
+    .google-rating-card{
+        margin-top: 75px;
+    }
+    .google-rating-modal-box{
+        padding: 20px 10px;
     }
 }
 @media only screen and (max-width: 576px){
